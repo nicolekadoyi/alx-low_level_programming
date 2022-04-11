@@ -8,18 +8,18 @@
 
 int main(void)
 {
-	int n = '0';
-	int ch = 'a';
+	int n, spc;
 
-	while (n <= '9')
+	for (n = '0'; n <= '9'; n++)
 	{
 		putchar(n);
-		n++;
-	}
-	while (ch <= 'f')
-	{
-		putchar(ch);
-		ch++;
+		do
+		{
+			putchar(n + ',');
+			putchar(n + " ");
+			spc++;
+		}
+		while (n <= '9');
 	}
 	putchar('\n');
 	return (0);
