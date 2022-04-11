@@ -13,13 +13,15 @@ int main(void)
 	for (n = '0'; n <= '9'; n++)
 	{
 		putchar(n);
-		do
+		for (spc = '0'; spc == '0'; spc++)
 		{
-			putchar(n + ',');
-			putchar(n + " ");
-			spc++;
+			putchar(',');
+			putchar(' ');
+			if (n  >= spc)
+			{
+				continue;
+			}
 		}
-		while (n <= '9');
 	}
 	putchar('\n');
 	return (0);
