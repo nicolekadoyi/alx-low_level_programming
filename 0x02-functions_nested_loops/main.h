@@ -13,5 +13,6 @@
 
 int _putchar(char c);
 int print_alphabet(void);
-
+char print_alphabet_x10(void);
+int islower(int c);
 #endif
